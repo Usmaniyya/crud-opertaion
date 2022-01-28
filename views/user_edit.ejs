@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="/assets/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center"></h2>
+        <form action="/update" method="POST">
+            <input type="hidden" class="form-control" value="<%= user.id %>" name="id">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control"  name="name" value="<%= user.name %>" placeholder="Enter Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control"  name="email" value="<%= user.email %>" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone No:</label>
+                <input type="phone" class="form-control" name="phone" value="<%= user.phone %>" placeholder="Phone No" required>
+            </div>
+            <button type="submit" class="btn btn-success">Update</button>
+        </form>
+    </div>
+</body>
+</html>

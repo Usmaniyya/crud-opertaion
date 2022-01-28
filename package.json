@@ -1,0 +1,19 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "agent",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.12.0",
+    "method-override": "^3.0.0",
+    "mysql": "^2.18.1"
+  }
+}
